@@ -1,0 +1,16 @@
+version : '4'
+services :
+ myapp1 :
+  image : nginx
+  ports :
+   - "8090:80"
+
+
+ database :
+  image : mysql
+
+ myapp2 :
+  image : alpine
+
+ myapp3 :
+  image : tomcat
