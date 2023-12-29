@@ -1,0 +1,13 @@
+version : '3'
+services :
+ myapp1 :
+  image : nginx
+  ports :
+   - "9080:80"
+
+ database :
+  image : nginx
+
+ myapp2 :
+  image : nginx
+  
