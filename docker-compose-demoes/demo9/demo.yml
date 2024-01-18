@@ -7,9 +7,10 @@ services :
 
  database :
   image : ibtech/tomcat9
+  ports :
    - "8091:8080"
 
  app2 :
-  image : ibtech/tomcat9
-  ports :
-   - "8092:8080"
+  image : nginx
+
+
