@@ -1,0 +1,22 @@
+version : '3'
+services :
+ database :
+  image : mysql
+
+ app1 :
+  image : nginx
+  ports :
+   - "8090:80"
+
+ app2 :
+  image : nginx
+  ports :
+   - "8091:80"
+
+ app3 :
+  image : nginx
+  ports :
+   - "8092:80"
+
+
+ 
