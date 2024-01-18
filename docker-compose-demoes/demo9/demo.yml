@@ -1,12 +1,15 @@
 version : '3'
 services :
- myapp1 :
+ app1 :
   image : nginx
   ports :
    - "8090:80"
 
  database :
-  image : nginx
+  image : ibtech/tomcat9
+   - "8091:8080"
 
- myapp2 :
-  image : nginx
+ app2 :
+  image : ibtech/tomcat9
+  ports :
+   - "8092:8080"
