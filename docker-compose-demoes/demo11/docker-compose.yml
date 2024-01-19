@@ -1,0 +1,14 @@
+version : '4'
+services :
+ app1 :
+  image : roisroshan/webapp-demo:14
+  ports :
+   - "3001:3000"
+
+ app2 :
+  image : roisroshan/ubuntu-java8:10
+
+ app3 :
+  image : nginx
+  ports :
+   - "81:80"
